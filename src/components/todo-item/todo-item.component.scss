@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.del {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    padding: 5px 9px;
+}
+
+.todo {
+    background: #f4f4ff;
+    border-bottom: 1px #ccc dotted;
+    padding: 10px;
+}
+
+.is-complete {
+    text-decoration: line-through;
+}

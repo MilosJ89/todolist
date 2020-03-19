@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Todo } from '../../models/Todo';
+import { Todo } from 'src/models/Todo';
 
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.sass']
+  styleUrls: ['./todos.component.scss']
 })
 export class TodosComponent implements OnInit {
   public todos: Todo[];
