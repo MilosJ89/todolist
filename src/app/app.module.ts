@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from '../components/todos/todos.component';
 import { TodoItemComponent } from 'src/components/todo-item/todo-item.component';
-import { HeaderComponent } from 'src/components/layout/header/header.component';
+import { HeaderComponent } from 'src/components/header/header.component';
 import { AddTodoComponent } from 'src/components/add-todo/add-todo.component';
-import { AboutComponent } from 'src/components/pages/about/about.component';
+import { AboutComponent } from 'src/pages/about/about.page';
+import { TodoService } from 'src/services/todo.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { AboutComponent } from 'src/components/pages/about/about.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
